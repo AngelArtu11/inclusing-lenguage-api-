@@ -44,7 +44,10 @@ namespace InclusingLenguage.API.Services
                     Email = request.Email,
                     FirstName = request.FirstName,
                     LastName = request.LastName,
-                    Name = $"{request.FirstName} {request.LastName}",
+                    // Si se proporciona Username, usarlo; de lo contrario, usar FirstName LastName
+                    Name = !string.IsNullOrWhiteSpace(request.Username)
+                        ? request.Username
+                        : $"{request.FirstName} {request.LastName}".Trim(),
                     PasswordHash = HashPassword(request.Password),
                     CreatedAt = DateTime.UtcNow,
                     LastLogin = DateTime.UtcNow,
