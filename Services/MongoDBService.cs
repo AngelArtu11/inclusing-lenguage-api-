@@ -20,6 +20,9 @@ namespace InclusingLenguage.API.Services
             var settings = MongoClientSettings.FromConnectionString(mongoDBSettings.Value.ConnectionString);
             settings.ServerApi = new ServerApi(ServerApiVersion.V1);
 
+            // Configurar WriteConcern correctamente para MongoDB Atlas
+            settings.WriteConcern = WriteConcern.W1; // Usar W1 en lugar de majority para evitar errores
+
             var client = new MongoClient(settings);
             _database = client.GetDatabase(mongoDBSettings.Value.DatabaseName);
         }
