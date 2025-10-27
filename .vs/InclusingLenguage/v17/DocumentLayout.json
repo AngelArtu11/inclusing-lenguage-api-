@@ -1,0 +1,455 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\04_services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\04_services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\04_services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\04_services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\generadordepalabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\generadordepalabras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\04_services\\userdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\04_services\\userdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\04_services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\04_services\\lessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\lessonpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\lessonpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\04_services\\mongodbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\04_services\\mongodbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\01_models\\userstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\01_models\\userstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\01_models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\01_models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\lessonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\lessonpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\03_views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\03_views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|c:\\users\\angel-gomez\\desktop\\inclusinglenguageother\\inclusinglenguage\\inclusinglenguage\\01_models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20631152-FD93-4F84-8527-36E357F9F77E}|InclusingLenguage\\InclusingLenguage.csproj|solutionrelative:inclusinglenguage\\01_models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LessonService.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\LessonService.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\04_Services\\LessonService.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\LessonService.cs",
+              "RelativeToolTip": "InclusingLenguage\\04_Services\\LessonService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAArwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T06:25:24.121Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\ProfilePage.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\ProfilePage.xaml",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\ProfilePage.xaml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-16T06:15:22.379Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserDocument.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\UserDocument.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\04_Services\\UserDocument.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\UserDocument.cs",
+              "RelativeToolTip": "InclusingLenguage\\04_Services\\UserDocument.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:44:36.943Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\04_Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\AuthenticationService.cs",
+              "RelativeToolTip": "InclusingLenguage\\04_Services\\AuthenticationService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:32:44.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\ProfileService.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\04_Services\\ProfileService.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\ProfileService.cs",
+              "RelativeToolTip": "InclusingLenguage\\04_Services\\ProfileService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwCEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:04:54.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\RegisterPage.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\RegisterPage.xaml",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\RegisterPage.xaml",
+              "ViewState": "AgIAALEAAAAAAAAAAAAMwNYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-01T20:17:59.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\MauiProgram.cs",
+              "RelativeToolTip": "InclusingLenguage\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:17:27.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\MainPage.xaml.cs",
+              "RelativeToolTip": "InclusingLenguage\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:18:47.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\MainPage.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\MainPage.xaml",
+              "RelativeToolTip": "InclusingLenguage\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-21T19:17:29.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\AppShell.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\AppShell.xaml",
+              "RelativeToolTip": "InclusingLenguage\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-21T19:17:25.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\App.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\App.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\App.xaml",
+              "RelativeToolTip": "InclusingLenguage\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-21T19:17:22.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GeneradorDePalabras.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\GeneradorDePalabras.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\GeneradorDePalabras.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\GeneradorDePalabras.cs",
+              "RelativeToolTip": "InclusingLenguage\\GeneradorDePalabras.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T06:50:01.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LessonPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LessonPage.xaml.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\LessonPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LessonPage.xaml.cs",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\LessonPage.xaml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwBgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T06:35:44.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\ProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\ProfilePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:16:25.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LoginPage.xaml.cs",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\LoginPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:51:28.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\HomePage.xaml.cs",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\HomePage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:23:32.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MongoDBService.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\MongoDBService.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\04_Services\\MongoDBService.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\04_Services\\MongoDBService.cs",
+              "RelativeToolTip": "InclusingLenguage\\04_Services\\MongoDBService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:29:11.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\RegisterPage.xaml.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\RegisterPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\RegisterPage.xaml.cs",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\RegisterPage.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:18:15.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserStats.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\01_Models\\UserStats.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\01_Models\\UserStats.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\01_Models\\UserStats.cs",
+              "RelativeToolTip": "InclusingLenguage\\01_Models\\UserStats.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAiwFAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:04:05.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\HomePage.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\HomePage.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\HomePage.xaml",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\HomePage.xaml",
+              "ViewState": "AgIAANQAAAAAAAAAAAAjwOEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-01T20:21:21.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\01_Models\\Lesson.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\01_Models\\Lesson.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\01_Models\\Lesson.cs",
+              "RelativeToolTip": "InclusingLenguage\\01_Models\\Lesson.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwEIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T06:24:14.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\App.xaml.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\App.xaml.cs",
+              "RelativeToolTip": "InclusingLenguage\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T20:26:29.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LessonPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LessonPage.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\LessonPage.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LessonPage.xaml",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\LessonPage.xaml",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAswIcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-13T06:28:12.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "InclusingLenguage\\03_Views\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\03_Views\\LoginPage.xaml",
+              "RelativeToolTip": "InclusingLenguage\\03_Views\\LoginPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-01T18:49:53.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\01_Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "InclusingLenguage\\01_Models\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\Angel-Gomez\\Desktop\\InclusingLenguageother\\InclusingLenguage\\InclusingLenguage\\01_Models\\UserProfile.cs",
+              "RelativeToolTip": "InclusingLenguage\\01_Models\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T18:18:02.998Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

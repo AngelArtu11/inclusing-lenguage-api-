@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InclusingLenguage._03_Views.LoginPage"
+             Title="LoginPage">
+    <ScrollView>
+        <Grid Padding="30,50,30,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Header Section -->
+            <StackLayout Grid.Row="0" VerticalOptions="Center" Spacing="25">
+
+                <!-- Logo/Icon with Gradient Effect -->
+                <Frame BackgroundColor="#13B7FF" 
+                       CornerRadius="60" 
+                       HeightRequest="120" 
+                       WidthRequest="120" 
+                       HorizontalOptions="Center"
+                       HasShadow="True"
+                       Margin="0,0,0,20">
+                    <Grid>
+                        <!-- Background gradient effect -->
+                        <Ellipse Fill="#00ABE8" 
+                                WidthRequest="80" 
+                                HeightRequest="80" 
+                                HorizontalOptions="Center" 
+                                VerticalOptions="Center"/>
+
+                        <Label Text="🤟" 
+                               FontSize="45" 
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Welcome Text -->
+                <StackLayout Spacing="10">
+                    <Label Text="SignLearn" 
+                           FontSize="36" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="Aprende lenguaje de señas" 
+                           FontSize="18" 
+                           TextColor="#86CBFF" 
+                           HorizontalOptions="Center" 
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="de forma divertida e interactiva" 
+                           FontSize="18" 
+                           TextColor="#86CBFF" 
+                           HorizontalOptions="Center" 
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+            </StackLayout>
+
+            <!-- Login Form -->
+            <StackLayout Grid.Row="1" Spacing="20">
+
+                <!-- Email Entry -->
+                <Frame BackgroundColor="#002132" 
+                       BorderColor="#0073A3"
+                       HasShadow="True"
+                       CornerRadius="15" 
+                       Padding="0">
+                    <StackLayout Orientation="Horizontal" Padding="20,0" Spacing="15">
+                        <Label Text="📧" 
+                               FontSize="20" 
+                               VerticalOptions="Center"
+                               TextColor="#13B7FF"/>
+                        <Entry x:Name="EmailEntry" 
+                               Placeholder="Correo electrónico" 
+                               PlaceholderColor="#86CBFF"
+                               TextColor="White" 
+                               BackgroundColor="Transparent"
+                               Keyboard="Email"
+                               VerticalOptions="Center"
+                               FontSize="16"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Password Entry -->
+                <Frame BackgroundColor="#002132" 
+                       BorderColor="#0073A3"
+                       HasShadow="True"
+                       CornerRadius="15" 
+                       Padding="0">
+                    <StackLayout Orientation="Horizontal" Padding="20,0" Spacing="15">
+                        <Label Text="🔒" 
+                               FontSize="20" 
+                               VerticalOptions="Center"
+                               TextColor="#13B7FF"/>
+                        <Entry x:Name="PasswordEntry" 
+                               Placeholder="Contraseña" 
+                               PlaceholderColor="#86CBFF"
+                               TextColor="White" 
+                               BackgroundColor="Transparent"
+                               IsPassword="True"
+                               VerticalOptions="Center"
+                               FontSize="16"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Remember Me -->
+                <StackLayout Orientation="Horizontal" 
+                            HorizontalOptions="Start" 
+                            Spacing="10"
+                            Margin="5,0,0,0">
+                    <CheckBox x:Name="RememberMeCheckBox" 
+                             Color="#13B7FF"
+                             VerticalOptions="Center"/>
+                    <Label Text="Recordar mis datos" 
+                           TextColor="#C4E2FF" 
+                           FontSize="14"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+
+                <!-- Login Button -->
+                <Button x:Name="LoginButton" 
+                        Text="Iniciar Sesión" 
+                        BackgroundColor="#13B7FF" 
+                        TextColor="White" 
+                        CornerRadius="15" 
+                        HeightRequest="55"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        Margin="0,10,0,0"
+                        Clicked="OnLoginClicked">
+                    <Button.Shadow>
+                        <Shadow Brush="#13B7FF" 
+                                Offset="0,4" 
+                                Radius="10" 
+                                Opacity="0.3"/>
+                    </Button.Shadow>
+                </Button>
+
+                <!-- Loading Indicator -->
+                <StackLayout x:Name="LoadingLayout" 
+                            IsVisible="False"
+                            Orientation="Horizontal" 
+                            HorizontalOptions="Center" 
+                            Spacing="10"
+                            Margin="0,10,0,0">
+                    <ActivityIndicator x:Name="LoadingIndicator" 
+                                      IsRunning="False" 
+                                      Color="#13B7FF"
+                                      VerticalOptions="Center"/>
+                    <Label x:Name="LoadingLabel" 
+                           Text="Iniciando sesión..." 
+                           TextColor="#86CBFF" 
+                           FontSize="14"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+
+                <!-- Separator -->
+                <StackLayout Orientation="Horizontal" 
+                            HorizontalOptions="Center" 
+                            Spacing="15" 
+                            Margin="0,20,0,10">
+                    <BoxView BackgroundColor="#0073A3" 
+                            HeightRequest="1" 
+                            WidthRequest="60"
+                            VerticalOptions="Center"/>
+                    <Label Text="o" 
+                           TextColor="#86CBFF" 
+                           FontSize="16"
+                           VerticalOptions="Center"/>
+                    <BoxView BackgroundColor="#0073A3" 
+                            HeightRequest="1" 
+                            WidthRequest="60"
+                            VerticalOptions="Center"/>
+                </StackLayout>
+
+                <!-- Register Button -->
+                <Button x:Name="RegisterButton" 
+                        Text="Crear Cuenta Nueva" 
+                        BackgroundColor="Transparent" 
+                        TextColor="#13B7FF" 
+                        BorderColor="#13B7FF"
+                        BorderWidth="2"
+                        CornerRadius="15" 
+                        HeightRequest="55"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        Clicked="OnRegisterClicked"/>
+
+                <!-- Forgot Password -->
+                <Button x:Name="ForgotPasswordButton" 
+                        Text="¿Olvidaste tu contraseña?" 
+                        BackgroundColor="Transparent" 
+                        TextColor="#86CBFF" 
+                        FontSize="14"
+                        Clicked="OnForgotPasswordClicked"/>
+
+                <!-- Guest Access -->
+                <Button x:Name="GuestButton" 
+                        Text="Continuar como invitado" 
+                        BackgroundColor="Transparent" 
+                        TextColor="#C4E2FF" 
+                        FontSize="14"
+                        Margin="0,10,0,0"
+                        Clicked="OnGuestClicked"/>
+
+            </StackLayout>
+
+            <!-- Footer -->
+            <StackLayout Grid.Row="2" 
+                        VerticalOptions="End" 
+                        Spacing="10">
+
+                <!-- Social/Quick Access -->
+                <StackLayout Orientation="Horizontal" 
+                            HorizontalOptions="Center" 
+                            Spacing="20"
+                            Margin="0,0,0,20">
+                    <Frame BackgroundColor="#002132" 
+                           CornerRadius="25" 
+                           Padding="15"
+                           HasShadow="True">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnQuickTourTapped"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal" Spacing="8">
+                            <Label Text="👀" FontSize="16"/>
+                            <Label Text="Tour rápido" 
+                                   TextColor="#86CBFF" 
+                                   FontSize="12"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="#002132" 
+                           CornerRadius="25" 
+                           Padding="15"
+                           HasShadow="True">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnHelpTapped"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout Orientation="Horizontal" Spacing="8">
+                            <Label Text="❓" FontSize="16"/>
+                            <Label Text="Ayuda" 
+                                   TextColor="#86CBFF" 
+                                   FontSize="12"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <Label Text="© 2024 SignLearn" 
+                       FontSize="12" 
+                       TextColor="#0073A3" 
+                       HorizontalOptions="Center"/>
+
+                <Label Text="Hecho con ❤️ para la comunidad sorda" 
+                       FontSize="11" 
+                       TextColor="#00577D" 
+                       HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet --version:*)",
+      "Bash(dotnet sln:*)",
+      "Bash(dotnet add package:*)",
+      "Bash(dotnet add:*)",
+      "Bash(mkdir:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet run)",
+      "Bash(ipconfig:*)",
+      "Bash(findstr:*)",
+      "Bash(for file in RegisterPage.xaml.cs ProfilePage.xaml.cs LessonPage.xaml.cs)",
+      "Bash(do sed -i '4 a using InclusingLenguage._05_Helpers;' \"$file\")",
+      "Bash(done)",
+      "Bash(curl:*)",
+      "Bash(netsh advfirewall firewall add rule:*)",
+      "Bash(dotnet clean:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Read(//c/Users/Angel-Gomez/Desktop/lsm_app/**)",
+      "Bash(npm install:*)",
+      "Bash(npx expo start:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(railway login:*)",
+      "Bash(git rm:*)",
+      "Bash(gh:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Bash(dir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

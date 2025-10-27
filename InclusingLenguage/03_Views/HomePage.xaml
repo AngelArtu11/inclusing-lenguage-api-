@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InclusingLenguage._03_Views.HomePage"
+             Title="HomePage"
+             BackgroundColor="#00131F">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Frame Grid.Row="0" 
+               BackgroundColor="#002132" 
+               
+               Padding="25,15,25,25" 
+               HasShadow="True"
+               Margin="0,0,0,15">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- User Info -->
+                <StackLayout Grid.Row="0" Grid.Column="0" 
+                            Orientation="Horizontal" 
+                            Spacing="12">
+                    <Frame BackgroundColor="#13B7FF" 
+                           CornerRadius="25" 
+                           HeightRequest="50" 
+                           WidthRequest="50" 
+                           Padding="0" 
+                           HasShadow="False">
+                        <Label x:Name="UserInitialLabel" 
+                               Text="U" 
+                               FontSize="20" 
+                               FontAttributes="Bold"
+                               TextColor="White" 
+                               HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <StackLayout Spacing="4" VerticalOptions="Center">
+                        <Label x:Name="WelcomeLabel" 
+                               Text="¡Hola!" 
+                               FontSize="20" 
+                               FontAttributes="Bold" 
+                               TextColor="White"/>
+                        <Label x:Name="UserLevelLabel" 
+                               Text="Nivel 1" 
+                               FontSize="13" 
+                               TextColor="#86CBFF"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Streak -->
+                <Frame Grid.Row="0" Grid.Column="1" 
+                       BackgroundColor="#00577D" 
+                       CornerRadius="15" 
+                       Padding="12,8"
+                       Margin="0,0,10,0"
+                       HasShadow="False">
+                    <StackLayout Spacing="2" Orientation="Horizontal">
+                        <Label Text="🔥" 
+                               FontSize="18" 
+                               VerticalOptions="Center"/>
+                        <Label x:Name="StreakLabel" 
+                               Text="7" 
+                               FontSize="16" 
+                               FontAttributes="Bold" 
+                               TextColor="#FF6B35" 
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Experience -->
+                <Frame Grid.Row="0" Grid.Column="2" 
+                       BackgroundColor="#00577D" 
+                       CornerRadius="15" 
+                       Padding="12,8"
+                       HasShadow="False">
+                    <StackLayout Spacing="2" Orientation="Horizontal">
+                        <Label Text="⚡" 
+                               FontSize="18" 
+                               VerticalOptions="Center"/>
+                        <Label x:Name="ExperienceLabel" 
+                               Text="150" 
+                               FontSize="16" 
+                               FontAttributes="Bold" 
+                               TextColor="#FFD700" 
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Progress Bar -->
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="3" 
+                            Margin="0,15,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" 
+                               Text="Meta diaria" 
+                               FontSize="13" 
+                               TextColor="#C4E2FF"/>
+                        <Label Grid.Column="1" 
+                               x:Name="DailyGoalLabel"
+                               Text="3/5" 
+                               FontSize="13" 
+                               FontAttributes="Bold"
+                               TextColor="#13B7FF"/>
+                    </Grid>
+
+                    <ProgressBar x:Name="DailyProgressBar" 
+                                 Progress="0.6" 
+                                 ProgressColor="#13B7FF" 
+                                 BackgroundColor="#00577D"
+                                 HeightRequest="10"
+                                 Margin="0,8,0,0"
+                                />
+                </StackLayout>
+
+            </Grid>
+        </Frame>
+
+        <!-- Main Content -->
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="20,0,20,20" Spacing="25">
+
+                <!-- Quick Actions -->
+                <StackLayout Spacing="15">
+                    <Label Text="🚀 Acciones Rápidas" 
+                           FontSize="20" 
+                           FontAttributes="Bold" 
+                           TextColor="White"/>
+
+                    <Grid ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Continue Lesson Button -->
+                        <Frame Grid.Column="0" 
+                               BackgroundColor="#13B7FF" 
+                               CornerRadius="20" 
+                               Padding="20,25" 
+                               HasShadow="True">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnContinueLessonTapped"/>
+                            </Frame.GestureRecognizers>
+                            <Frame.Shadow>
+                                <Shadow Brush="#13B7FF" 
+                                        Offset="0,6" 
+                                        Radius="15" 
+                                        Opacity="0.4"/>
+                            </Frame.Shadow>
+
+                            <StackLayout Spacing="12">
+                                <Label Text="📚" 
+                                       FontSize="36" 
+                                       HorizontalOptions="Center"/>
+                                <Label Text="Continuar" 
+                                       FontSize="16" 
+                                       FontAttributes="Bold" 
+                                       TextColor="White" 
+                                       HorizontalOptions="Center" 
+                                       HorizontalTextAlignment="Center"/>
+                                <Label Text="Lección 4" 
+                                       FontSize="13" 
+                                       TextColor="#E5F4FF" 
+                                       HorizontalOptions="Center" 
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Practice Button -->
+                        <Frame Grid.Column="1" 
+                               BackgroundColor="#00ABE8" 
+                               CornerRadius="20" 
+                               Padding="20,25" 
+                               HasShadow="True">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPracticeTapped"/>
+                            </Frame.GestureRecognizers>
+                            <Frame.Shadow>
+                                <Shadow Brush="#00ABE8" 
+                                        Offset="0,6" 
+                                        Radius="15" 
+                                        Opacity="0.4"/>
+                            </Frame.Shadow>
+
+                            <StackLayout Spacing="12">
+                                <Label Text="💪" 
+                                       FontSize="36" 
+                                       HorizontalOptions="Center"/>
+                                <Label Text="Practicar" 
+                                       FontSize="16" 
+                                       FontAttributes="Bold" 
+                                       TextColor="White" 
+                                       HorizontalOptions="Center" 
+                                       HorizontalTextAlignment="Center"/>
+                                <Label Text="Repaso" 
+                                       FontSize="13" 
+                                       TextColor="#E5F4FF" 
+                                       HorizontalOptions="Center" 
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </StackLayout>
+
+                <!-- Lessons Section -->
+                <StackLayout Spacing="15">
+                    <Label Text="📖 Tu Ruta de Aprendizaje" 
+                           FontSize="20" 
+                           FontAttributes="Bold" 
+                           TextColor="White"/>
+
+                    <!-- Lesson 1: Alphabet -->
+                    <Frame BackgroundColor="#002132" 
+                           BorderColor="#0073A3"
+                           CornerRadius="20" 
+                           Padding="20" 
+                           HasShadow="True">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnAlphabetLessonTapped"/>
+                        </Frame.GestureRecognizers>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Lesson Icon -->
+                            <Frame Grid.Column="0" 
+                                   BackgroundColor="#4CAF50" 
+                                   CornerRadius="35" 
+                                   HeightRequest="60" 
+                                   WidthRequest="60" 
+                                   Padding="0" 
+                                   HasShadow="True">
+                                <Label Text="🔤" 
+                                       FontSize="30" 
+                                       HorizontalOptions="Center" 
+                                       VerticalOptions="Center"/>
+                            </Frame>
+
+                            <!-- Lesson Info -->
+                            <StackLayout Grid.Column="1" 
+                                         Spacing="8" 
+                                         VerticalOptions="Center" 
+                                         Margin="15,0,0,0">
+                                <Label Text="Alfabeto en Señas" 
+                                       FontSize="18" 
+                                       FontAttributes="Bold" 
+                                       TextColor="White"/>
+                                <Label Text="27 lecciones • Básico" 
+                                       FontSize="13" 
+                                       TextColor="#86CBFF"/>
+                                <ProgressBar Progress="0.48" 
+                                             ProgressColor="#4CAF50" 
+                                             BackgroundColor="#00577D"
+                                             HeightRequest="6"
+                                             />
+                                <Label Text="13 de 27 completadas • 48%" 
+                                       FontSize="11" 
+                                       TextColor="#4CAF50"/>
+                            </StackLayout>
+
+                            <!-- Status -->
+                            <Label Grid.Column="2" 
+                                   Text="▶️" 
+                                   FontSize="24" 
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                    </Frame>
+
+                    <!-- Lesson 2: Numbers -->
+                    <Frame BackgroundColor="#002132" 
+                           BorderColor="#0073A3"
+                           CornerRadius="20" 
+                           Padding="20" 
+                           HasShadow="True"
+                           Opacity="0.7">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame Grid.Column="0" 
+                                   BackgroundColor="#2196F3" 
+                                   CornerRadius="35" 
+                                   HeightRequest="60" 
+                                   WidthRequest="60" 
+                                   Padding="0" 
+                                   HasShadow="True">
+                                <Label Text="🔢" 
+                                       FontSize="30" 
+                                       HorizontalOptions="Center" 
+                                       VerticalOptions="Center"/>
+                            </Frame>
+
+                            <StackLayout Grid.Column="1" 
+                                         Spacing="8" 
+                                         VerticalOptions="Center" 
+                                         Margin="15,0,0,0">
+                                <Label Text="Números en Señas" 
+                                       FontSize="18" 
+                                       FontAttributes="Bold" 
+                                       TextColor="White"/>
+                                <Label Text="15 lecciones • Básico" 
+                                       FontSize="13" 
+                                       TextColor="#86CBFF"/>
+                                <Label Text="Completa el alfabeto para desbloquear" 
+                                       FontSize="11" 
+                                       TextColor="#FFD700"/>
+                            </StackLayout>
+
+                            <Label Grid.Column="2" 
+                                   Text="🔒" 
+                                   FontSize="24" 
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                    </Frame>
+
+                    <!-- Lesson 3: Basic Words -->
+                    <Frame BackgroundColor="#002132" 
+                           BorderColor="#00577D"
+                           CornerRadius="20" 
+                           Padding="20" 
+                           HasShadow="False"
+                           Opacity="0.5">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame Grid.Column="0" 
+                                   BackgroundColor="#9C27B0" 
+                                   CornerRadius="35" 
+                                   HeightRequest="60" 
+                                   WidthRequest="60" 
+                                   Padding="0" 
+                                   HasShadow="False">
+                                <Label Text="💬" 
+                                       FontSize="30" 
+                                       HorizontalOptions="Center" 
+                                       VerticalOptions="Center"/>
+                            </Frame>
+
+                            <StackLayout Grid.Column="1" 
+                                         Spacing="8" 
+                                         VerticalOptions="Center" 
+                                         Margin="15,0,0,0">
+                                <Label Text="Palabras Básicas" 
+                                       FontSize="18" 
+                                       FontAttributes="Bold" 
+                                       TextColor="White"/>
+                                <Label Text="20 lecciones • Intermedio" 
+                                       FontSize="13" 
+                                       TextColor="#86CBFF"/>
+                                <Label Text="Desbloquea completando números" 
+                                       FontSize="11" 
+                                       TextColor="#86CBFF"/>
+                            </StackLayout>
+
+                            <Label Grid.Column="2" 
+                                   Text="🔒" 
+                                   FontSize="24" 
+                                   VerticalOptions="Center"
+                                   Opacity="0.5"/>
+                        </Grid>
+                    </Frame>
+
+                </StackLayout>
+
+                <!-- Bottom Padding -->
+                <BoxView HeightRequest="20" BackgroundColor="Transparent"/>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation Bar -->
+        <Frame Grid.Row="2" 
+               BackgroundColor="#002132" 
+                
+               Padding="10,15,10,20" 
+               HasShadow="True">
+
+            <Grid ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Home Tab -->
+                <StackLayout Grid.Column="0" Spacing="5">
+                    <Frame BackgroundColor="#13B7FF" 
+                           CornerRadius="15" 
+                           Padding="12,8"
+                           HorizontalOptions="Center"
+                           HasShadow="False">
+                        <Label Text="🏠" FontSize="22"/>
+                    </Frame>
+                    <Label Text="Inicio" 
+                           FontSize="11" 
+                           TextColor="#13B7FF" 
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+
+                <!-- Lessons Tab -->
+                <StackLayout Grid.Column="1" Spacing="5">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLessonsTapped"/>
+                    </StackLayout.GestureRecognizers>
+                    <Frame BackgroundColor="Transparent" 
+                           CornerRadius="15" 
+                           Padding="12,8"
+                           HorizontalOptions="Center"
+                           HasShadow="False">
+                        <Label Text="📚" FontSize="22"/>
+                    </Frame>
+                    <Label Text="Lecciones" 
+                           FontSize="11" 
+                           TextColor="#86CBFF" 
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <!-- Progress Tab -->
+                <StackLayout Grid.Column="2" Spacing="5">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnProgressTapped"/>
+                    </StackLayout.GestureRecognizers>
+                    <Frame BackgroundColor="Transparent" 
+                           CornerRadius="15" 
+                           Padding="12,8"
+                           HorizontalOptions="Center"
+                           HasShadow="False">
+                        <Label Text="📊" FontSize="22"/>
+                    </Frame>
+                    <Label Text="Progreso" 
+                           FontSize="11" 
+                           TextColor="#86CBFF" 
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <!-- Profile Tab -->
+                <StackLayout Grid.Column="3" Spacing="5">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnProfileTapped"/>
+                    </StackLayout.GestureRecognizers>
+                    <Frame BackgroundColor="Transparent" 
+                           CornerRadius="15" 
+                           Padding="12,8"
+                           HorizontalOptions="Center"
+                           HasShadow="False">
+                        <Label Text="👤" FontSize="22"/>
+                    </Frame>
+                    <Label Text="Perfil" 
+                           FontSize="11" 
+                           TextColor="#86CBFF" 
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+
+            </Grid>
+        </Frame>
+
+    </Grid>
+</ContentPage>
