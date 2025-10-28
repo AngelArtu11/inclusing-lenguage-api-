@@ -24,7 +24,8 @@ namespace InclusingLenguage.API.Controllers
             // No retornar password hashes
             foreach (var user in users)
             {
-                user.PasswordHash = string.Empty;
+                user.Pass = string.Empty;
+                user.PasswordHash = null;
             }
 
             return Ok(users);
@@ -42,7 +43,8 @@ namespace InclusingLenguage.API.Controllers
                 return NotFound(new { message = "Usuario no encontrado" });
             }
 
-            user.PasswordHash = string.Empty;
+            user.Pass = string.Empty;
+            user.PasswordHash = null;
             return Ok(user);
         }
 
@@ -78,7 +80,7 @@ namespace InclusingLenguage.API.Controllers
                 .Find(u => u.Email == email)
                 .FirstOrDefaultAsync();
 
-            result.PasswordHash = string.Empty;
+            result.Pass = string.Empty;
             return Ok(result);
         }
 

@@ -21,8 +21,13 @@ namespace InclusingLenguage.API.Models
         [BsonElement("fechaRegistro")]
         public string FechaRegistro { get; set; } = string.Empty;
 
+        [BsonElement("pass")]
+        public string Pass { get; set; } = string.Empty;
+
+        // Compatibilidad con registros antiguos que usaban "passwordHash"
         [BsonElement("passwordHash")]
-        public string PasswordHash { get; set; } = string.Empty;
+        [BsonIgnoreIfNull]
+        public string? PasswordHash { get; set; }
 
         // Propiedades adicionales para compatibilidad con la app
         [BsonIgnore]
@@ -91,6 +96,7 @@ namespace InclusingLenguage.API.Models
         public bool IsSuccess { get; set; }
         public string Token { get; set; } = string.Empty;
         public string ErrorMessage { get; set; } = string.Empty;
+        public string UsuarioID { get; set; } = string.Empty;
         public UserProfile? UserProfile { get; set; }
     }
 }

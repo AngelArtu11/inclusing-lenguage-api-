@@ -50,7 +50,7 @@ namespace InclusingLenguage.API.Services
                         ? request.Username
                         : $"{request.FirstName} {request.LastName}".Trim(),
                     FechaRegistro = DateTime.UtcNow.ToString("yyyy-MM-dd"),
-                    PasswordHash = HashPassword(request.Password)
+                    Pass = HashPassword(request.Password)
                 };
 
                 await _mongoDBService.Users.InsertOneAsync(newUser);
@@ -73,11 +73,12 @@ namespace InclusingLenguage.API.Services
                 await _mongoDBService.Progresion.InsertOneAsync(progresion);
 
                 // No retornar el password hash
-                newUser.PasswordHash = string.Empty;
+                newUser.Pass = string.Empty;
 
                 return new AuthResponse
                 {
                     IsSuccess = true,
+                    UsuarioID = usuarioID,
                     UserProfile = newUser,
                     Token = GenerateToken(newUser.Correo)
                 };
@@ -100,7 +101,10 @@ namespace InclusingLenguage.API.Services
                     .Find(u => u.Correo == request.Email)
                     .FirstOrDefaultAsync();
 
-                if (user == null || !VerifyPassword(request.Password, user.PasswordHash))
+                // Obtener el hash correcto (soportar tanto "pass" como "passwordHash")
+                var passwordHash = !string.IsNullOrEmpty(user?.Pass) ? user.Pass : user?.PasswordHash ?? "";
+
+                if (user == null || !VerifyPassword(request.Password, passwordHash))
                 {
                     return new AuthResponse
                     {
@@ -110,11 +114,13 @@ namespace InclusingLenguage.API.Services
                 }
 
                 // No retornar el hash
-                user.PasswordHash = string.Empty;
+                user.Pass = string.Empty;
+                user.PasswordHash = null;
 
                 return new AuthResponse
                 {
                     IsSuccess = true,
+                    UsuarioID = user.UsuarioID,
                     UserProfile = user,
                     Token = GenerateToken(user.Correo)
                 };

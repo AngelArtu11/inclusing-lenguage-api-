@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using InclusingLenguage.API.Models;
 using InclusingLenguage.API.Services;
+using Microsoft.Extensions.Options;
 
 namespace InclusingLenguage.API.Controllers
 {
@@ -9,10 +10,22 @@ namespace InclusingLenguage.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
+        private readonly MongoDBSettings _mongoDBSettings;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, IOptions<MongoDBSettings> mongoDBSettings)
         {
             _authService = authService;
+            _mongoDBSettings = mongoDBSettings.Value;
+        }
+
+        [HttpGet("config")]
+        public ActionResult GetConfig()
+        {
+            return Ok(new
+            {
+                DatabaseName = _mongoDBSettings.DatabaseName,
+                ConnectionStringHint = _mongoDBSettings.ConnectionString.Contains("inclusign") ? "inclusign" : "includesign"
+            });
         }
 
         [HttpPost("register")]
