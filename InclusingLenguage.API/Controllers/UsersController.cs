@@ -6,7 +6,7 @@ using MongoDB.Driver;
 namespace InclusingLenguage.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/usuarios")]
     public class UsersController : ControllerBase
     {
         private readonly IMongoDBService _mongoDBService;
@@ -31,11 +31,11 @@ namespace InclusingLenguage.API.Controllers
             return Ok(users);
         }
 
-        [HttpGet("{email}")]
-        public async Task<ActionResult<UserProfile>> GetByEmail(string email)
+        [HttpGet("{usuarioID}")]
+        public async Task<ActionResult<UserProfile>> GetByUsuarioID(string usuarioID)
         {
             var user = await _mongoDBService.Users
-                .Find(u => u.Correo == email)
+                .Find(u => u.UsuarioID == usuarioID)
                 .FirstOrDefaultAsync();
 
             if (user == null)
@@ -48,11 +48,11 @@ namespace InclusingLenguage.API.Controllers
             return Ok(user);
         }
 
-        [HttpPut("{email}")]
-        public async Task<ActionResult<UserProfile>> Update(string email, [FromBody] UserProfile updatedUser)
+        [HttpPut("{usuarioID}")]
+        public async Task<ActionResult<UserProfile>> Update(string usuarioID, [FromBody] UserProfile updatedUser)
         {
             var user = await _mongoDBService.Users
-                .Find(u => u.Email == email)
+                .Find(u => u.UsuarioID == usuarioID)
                 .FirstOrDefaultAsync();
 
             if (user == null)
@@ -60,34 +60,26 @@ namespace InclusingLenguage.API.Controllers
                 return NotFound(new { message = "Usuario no encontrado" });
             }
 
-            // Actualizar solo los campos permitidos
+            // Actualizar solo los campos permitidos de la colección Usuarios
             var update = Builders<UserProfile>.Update
-                .Set(u => u.FirstName, updatedUser.FirstName)
-                .Set(u => u.LastName, updatedUser.LastName)
-                .Set(u => u.Name, $"{updatedUser.FirstName} {updatedUser.LastName}")
-                .Set(u => u.Level, updatedUser.Level)
-                .Set(u => u.Experience, updatedUser.Experience)
-                .Set(u => u.Streak, updatedUser.Streak)
-                .Set(u => u.CompletedLessons, updatedUser.CompletedLessons)
-                .Set(u => u.LessonProgress, updatedUser.LessonProgress)
-                .Set(u => u.DailyGoal, updatedUser.DailyGoal)
-                .Set(u => u.TodayProgress, updatedUser.TodayProgress)
-                .Set(u => u.ProfilePicture, updatedUser.ProfilePicture);
+                .Set(u => u.Nombre, updatedUser.Nombre)
+                .Set(u => u.Correo, updatedUser.Correo);
 
-            await _mongoDBService.Users.UpdateOneAsync(u => u.Email == email, update);
+            await _mongoDBService.Users.UpdateOneAsync(u => u.UsuarioID == usuarioID, update);
 
             var result = await _mongoDBService.Users
-                .Find(u => u.Email == email)
+                .Find(u => u.UsuarioID == usuarioID)
                 .FirstOrDefaultAsync();
 
             result.Pass = string.Empty;
+            result.PasswordHash = null;
             return Ok(result);
         }
 
-        [HttpDelete("{email}")]
-        public async Task<IActionResult> Delete(string email)
+        [HttpDelete("{usuarioID}")]
+        public async Task<IActionResult> Delete(string usuarioID)
         {
-            var result = await _mongoDBService.Users.DeleteOneAsync(u => u.Email == email);
+            var result = await _mongoDBService.Users.DeleteOneAsync(u => u.UsuarioID == usuarioID);
 
             if (result.DeletedCount == 0)
             {
@@ -97,11 +89,13 @@ namespace InclusingLenguage.API.Controllers
             return Ok(new { message = "Usuario eliminado exitosamente" });
         }
 
-        [HttpPost("{email}/progress")]
-        public async Task<ActionResult> UpdateProgress(string email, [FromBody] LessonProgressUpdate progressUpdate)
+        [HttpPost("{usuarioID}/progress")]
+        public async Task<ActionResult> UpdateProgress(string usuarioID, [FromBody] LessonProgressUpdate progressUpdate)
         {
+            // NOTA: Este endpoint está deprecado. Usar /api/progresion en su lugar.
+            // Se mantiene solo para compatibilidad con versiones antiguas.
             var user = await _mongoDBService.Users
-                .Find(u => u.Email == email)
+                .Find(u => u.UsuarioID == usuarioID)
                 .FirstOrDefaultAsync();
 
             if (user == null)
@@ -109,20 +103,11 @@ namespace InclusingLenguage.API.Controllers
                 return NotFound(new { message = "Usuario no encontrado" });
             }
 
-            var update = Builders<UserProfile>.Update
-                .Set($"lessonProgress.{progressUpdate.LessonId}", progressUpdate.Progress)
-                .Set(u => u.Experience, user.Experience + progressUpdate.ExperienceGained)
-                .Set(u => u.TodayProgress, user.TodayProgress + 1);
-
-            // Si completó la lección, agregarla a completedLessons
-            if (progressUpdate.Progress >= 100 && !user.CompletedLessons.Contains(progressUpdate.LessonId))
-            {
-                update = update.AddToSet(u => u.CompletedLessons, progressUpdate.LessonId);
-            }
-
-            await _mongoDBService.Users.UpdateOneAsync(u => u.Email == email, update);
-
-            return Ok(new { message = "Progreso actualizado" });
+            // Delegar al endpoint correcto de Progresion
+            return Ok(new {
+                message = "Usar /api/progresion para actualizar el progreso",
+                deprecated = true
+            });
         }
     }
 
