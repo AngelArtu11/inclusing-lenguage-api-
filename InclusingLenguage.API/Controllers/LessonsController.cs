@@ -6,7 +6,7 @@ using MongoDB.Driver;
 namespace InclusingLenguage.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/niveles")]
     public class LessonsController : ControllerBase
     {
         private readonly IMongoDBService _mongoDBService;
