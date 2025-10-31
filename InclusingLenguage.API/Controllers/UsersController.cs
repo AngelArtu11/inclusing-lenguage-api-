@@ -48,6 +48,23 @@ namespace InclusingLenguage.API.Controllers
             return Ok(user);
         }
 
+        [HttpGet("by-email/{email}")]
+        public async Task<ActionResult<UserProfile>> GetByEmail(string email)
+        {
+            var user = await _mongoDBService.Users
+                .Find(u => u.Correo == email)
+                .FirstOrDefaultAsync();
+
+            if (user == null)
+            {
+                return NotFound(new { message = "Usuario no encontrado" });
+            }
+
+            user.Pass = string.Empty;
+            user.PasswordHash = null;
+            return Ok(user);
+        }
+
         [HttpPut("{usuarioID}")]
         public async Task<ActionResult<UserProfile>> Update(string usuarioID, [FromBody] UserProfile updatedUser)
         {
